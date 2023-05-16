@@ -27,7 +27,7 @@ export const Modal = ({ addTodo, setBookingModal }) => {
                     <input className="textarea textarea-bordered w-full mt-10" placeholder="Add new todo" type="text" value={value} onChange={(e) => setValue(e.target.value)}
                     />
                     <div className="modal-action">
-                        <button type='submit' htmlFor="my-modal" className="todo-btn w-full">Add Todo</button>
+                        <button type='submit' className="todo-btn w-full">Add Todo</button>
                     </div>
                 </div>
             </div>
