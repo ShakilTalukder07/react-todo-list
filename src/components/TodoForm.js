@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 
+
+
 export const TodoForm = ({ addTodo }) => {
   const [value, setValue] = useState('');
 
@@ -14,9 +16,14 @@ export const TodoForm = ({ addTodo }) => {
     }
   };
   return (
-    <form onSubmit={handleSubmit} className="TodoForm">
-      <input type="text" value={value} onChange={(e) => setValue(e.target.value)} className="todo-input" placeholder='What is the task today?' />
-      <button type="submit" className='todo-btn'>Add Task</button>
-    </form>
+    // <form onSubmit={handleSubmit} className="TodoForm">
+    //   <input type="text" value={value} onChange={(e) => setValue(e.target.value)} className="todo-input" placeholder='What is the task today?' />
+    //   <button type="submit" className='todo-btn'>Add Task</button>
+      
+
+    // </form>
+      <button className='my-10' type="submit" htmlFor="my-modal">
+        <label htmlFor="my-modal-3" className="todo-btn">Add Todo</label>
+      </button>
   )
 }
